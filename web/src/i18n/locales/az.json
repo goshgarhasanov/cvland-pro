@@ -1,0 +1,53 @@
+{
+  "app": {
+    "name": "CVLAND PRO",
+    "tagline": "İşə qəbul edilən CV qur."
+  },
+  "nav": {
+    "home": "Ana səhifə",
+    "dashboard": "İdarə paneli",
+    "cvs": "CV-lərim",
+    "templates": "Şablonlar",
+    "login": "Daxil ol",
+    "register": "Qeydiyyat",
+    "logout": "Çıxış"
+  },
+  "home": {
+    "hero_title": "Dəqiqələr ərzində peşəkar CV qur.",
+    "hero_subtitle": "ATS-uyğun, HR-ların təsdiq etdiyi şablonlar. Canlı önizləmə. PDF ixracı.",
+    "cta_primary": "Pulsuz başla",
+    "cta_secondary": "Şablonlara bax",
+    "stat_seven_seconds": "HR hər CV-yə cəmi 7 saniyə baxır — hər saniyə dəyərlidir.",
+    "stat_callbacks": "ATS-optimallaşdırılmış CV-lər 40% daha çox geri zəng alır."
+  },
+  "auth": {
+    "login_title": "Xoş gəldin",
+    "login_subtitle": "CV-ni qurmağa davam etmək üçün daxil ol.",
+    "register_title": "Hesab aç",
+    "register_subtitle": "Pulsuz başla, kart tələb olunmur.",
+    "name": "Ad soyad",
+    "email": "E-poçt",
+    "password": "Şifrə",
+    "password_confirmation": "Şifrəni təsdiqlə",
+    "remember": "Məni xatırla",
+    "submit_login": "Daxil ol",
+    "submit_register": "Hesab yarat",
+    "have_account": "Artıq hesabın var?",
+    "no_account": "Hesabın yoxdur?"
+  },
+  "dashboard": {
+    "title": "İdarə paneli",
+    "welcome": "Xoş gəldin, {name}",
+    "your_cvs": "CV-lərin",
+    "create_new": "Yeni CV yarat",
+    "empty_title": "Hələ CV yoxdur",
+    "empty_subtitle": "Şablon seç və ilk peşəkar CV-ni qurmağa başla."
+  },
+  "common": {
+    "save": "Yadda saxla",
+    "cancel": "Ləğv et",
+    "edit": "Düzəlt",
+    "delete": "Sil",
+    "loading": "Yüklənir…"
+  }
+}

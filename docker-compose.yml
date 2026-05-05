@@ -1,0 +1,125 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/api/Dockerfile
+      target: dev
+    container_name: cvland_api
+    working_dir: /var/www/api
+    volumes:
+      - ./api:/var/www/api
+    ports:
+      - "8000:8000"
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: cvland
+      DB_USERNAME: cvland
+      DB_PASSWORD: secret
+      REDIS_HOST: redis
+      MAIL_HOST: mailhog
+      MAIL_PORT: 1025
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - cvland
+
+  worker:
+    build:
+      context: .
+      dockerfile: docker/api/Dockerfile
+      target: dev
+    container_name: cvland_worker
+    working_dir: /var/www/api
+    command: php artisan queue:work --tries=3 --timeout=120
+    volumes:
+      - ./api:/var/www/api
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: cvland
+      DB_USERNAME: cvland
+      DB_PASSWORD: secret
+      REDIS_HOST: redis
+    depends_on:
+      - api
+    networks:
+      - cvland
+
+  web:
+    image: node:20-alpine
+    container_name: cvland_web
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    volumes:
+      - ./web:/app
+    ports:
+      - "5173:5173"
+    networks:
+      - cvland
+
+  mysql:
+    image: mysql:8
+    container_name: cvland_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cvland
+      MYSQL_USER: cvland
+      MYSQL_PASSWORD: secret
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks:
+      - cvland
+
+  redis:
+    image: redis:7-alpine
+    container_name: cvland_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - cvland
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: cvland_mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - cvland
+
+  minio:
+    image: minio/minio:latest
+    container_name: cvland_minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: cvland
+      MINIO_ROOT_PASSWORD: secret123
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    networks:
+      - cvland
+
+networks:
+  cvland:
+    driver: bridge
+
+volumes:
+  mysql_data:
+  redis_data:
+  minio_data:

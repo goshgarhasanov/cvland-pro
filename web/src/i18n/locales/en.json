@@ -1,0 +1,53 @@
+{
+  "app": {
+    "name": "CVLAND PRO",
+    "tagline": "Build a CV that gets callbacks."
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "cvs": "My CVs",
+    "templates": "Templates",
+    "login": "Sign in",
+    "register": "Get started",
+    "logout": "Sign out"
+  },
+  "home": {
+    "hero_title": "Build a professional CV in minutes.",
+    "hero_subtitle": "ATS-friendly, recruiter-tested templates. Real-time preview. Export to PDF.",
+    "cta_primary": "Start for free",
+    "cta_secondary": "Browse templates",
+    "stat_seven_seconds": "Recruiters spend 7 seconds reviewing each CV — make every one count.",
+    "stat_callbacks": "40% more callbacks for ATS-optimised CVs."
+  },
+  "auth": {
+    "login_title": "Welcome back",
+    "login_subtitle": "Sign in to continue building your CV.",
+    "register_title": "Create your account",
+    "register_subtitle": "Free to start, no credit card needed.",
+    "name": "Full name",
+    "email": "Email",
+    "password": "Password",
+    "password_confirmation": "Confirm password",
+    "remember": "Remember me",
+    "submit_login": "Sign in",
+    "submit_register": "Create account",
+    "have_account": "Already have an account?",
+    "no_account": "Don't have an account?"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {name}",
+    "your_cvs": "Your CVs",
+    "create_new": "Create new CV",
+    "empty_title": "No CVs yet",
+    "empty_subtitle": "Pick a template and start building your first professional CV."
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "loading": "Loading…"
+  }
+}
