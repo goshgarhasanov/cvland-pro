@@ -32,8 +32,11 @@ api.interceptors.response.use(
   (response) => response,
   (error: AxiosError) => {
     if (error.response?.status === 401) {
-      const fromAuth = window.location.pathname.startsWith('/auth/')
-      if (!fromAuth) {
+      const url = error.config?.url ?? ''
+      const isAuthCheck = url.includes('/auth/me') || url.includes('/auth/login')
+      const onAuthPage = window.location.pathname.startsWith('/auth/')
+      const onPublicPage = window.location.pathname === '/' || window.location.pathname.startsWith('/templates')
+      if (!isAuthCheck && !onAuthPage && !onPublicPage) {
         window.dispatchEvent(new CustomEvent('auth:unauthenticated'))
       }
     }
