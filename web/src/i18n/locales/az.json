@@ -1,31 +1,174 @@
 {
   "app": {
     "name": "CVLAND PRO",
-    "tagline": "İşə qəbul edilən CV qur."
+    "tagline": "İşə qəbul olunan CV qur."
   },
   "nav": {
     "home": "Ana səhifə",
-    "dashboard": "İdarə paneli",
-    "cvs": "CV-lərim",
+    "features": "İmkanlar",
+    "how": "Necə işləyir",
     "templates": "Şablonlar",
+    "pricing": "Qiymətlər",
+    "faq": "Tez-tez verilən suallar",
+    "dashboard": "Panel",
+    "cvs": "CV-lərim",
     "login": "Daxil ol",
-    "register": "Qeydiyyat",
+    "register": "Pulsuz başla",
     "logout": "Çıxış"
   },
   "home": {
-    "hero_title": "Dəqiqələr ərzində peşəkar CV qur.",
-    "hero_subtitle": "ATS-uyğun, HR-ların təsdiq etdiyi şablonlar. Canlı önizləmə. PDF ixracı.",
+    "badge": "Yeni · Süni intellekt köməkçisi",
+    "hero_title_pre": "Dəqiqələr ərzində",
+    "hero_title_accent": "peşəkar CV",
+    "hero_title_post": "qur.",
+    "hero_subtitle": "ATS-dən keçən, HR-ların seçdiyi şablonlar. Canlı önizləmə, dörd dildə dəstək və saniyələr içində PDF ixracı.",
     "cta_primary": "Pulsuz başla",
     "cta_secondary": "Şablonlara bax",
-    "stat_seven_seconds": "HR hər CV-yə cəmi 7 saniyə baxır — hər saniyə dəyərlidir.",
-    "stat_callbacks": "ATS-optimallaşdırılmış CV-lər 40% daha çox geri zəng alır."
+    "trust": "Artıq 12 000+ namizəd CVLAND PRO ilə işə düzəlib",
+    "stats": {
+      "seconds_label": "HR diqqəti",
+      "seconds_value": "7 san",
+      "seconds_desc": "İşəgötürən hər CV-yə cəmi 7 saniyə ayırır — hər saniyə vacibdir.",
+      "callbacks_label": "Daha çox geri zəng",
+      "callbacks_value": "+40%",
+      "callbacks_desc": "ATS-uyğun CV ilə müsahibə dəvəti 40% artır.",
+      "templates_label": "Hazır şablon",
+      "templates_value": "30+",
+      "templates_desc": "Hər sahə üçün peşəkar dizayn — IT-dən marketinqə qədər.",
+      "languages_label": "Dil dəstəyi",
+      "languages_value": "4 dil",
+      "languages_desc": "Azərbaycan, ingilis, rus və türk dillərində CV qur."
+    },
+    "how": {
+      "kicker": "Sadə proses",
+      "title": "Üç addımda hazır CV",
+      "subtitle": "Peşəkar bir CV qurmaq üçün dizayner olmağa ehtiyac yoxdur. Sən sadəcə məzmuna fokuslan — qalanını biz edirik.",
+      "step1_title": "1. Şablon seç",
+      "step1_desc": "30-dan çox HR-test edilmiş şablon arasından öz peşənə uyğununu seç.",
+      "step2_title": "2. Məlumatlarını doldur",
+      "step2_desc": "Sadə formanı doldur, süni intellekt sənə daha güclü cümlələr təklif etsin.",
+      "step3_title": "3. PDF endir",
+      "step3_desc": "Bir kliklə yüksək keyfiyyətli PDF ixrac et və elə həmin gün müraciət et."
+    },
+    "features": {
+      "kicker": "İmkanlar",
+      "title": "İşinə yarayan hər şey bir yerdə",
+      "subtitle": "Detalları biz düşünmüşük — sən sadəcə öz hekayəni yaz.",
+      "ats_title": "ATS-uyğun struktur",
+      "ats_desc": "Şablonlarımız işəgötürən sistemləri (ATS) tərəfindən rahat oxunur — heç bir məlumat itmir.",
+      "ai_title": "Süni intellekt köməkçisi",
+      "ai_desc": "Vəzifə təsvirlərini, bacarıq siyahılarını və xülasəni bir kliklə təkmilləşdir.",
+      "languages_title": "4 dildə CV",
+      "languages_desc": "Azərbaycan, ingilis, rus və türk — bir profil, çoxlu dil.",
+      "preview_title": "Real-vaxt önizləmə",
+      "preview_desc": "Yazdıqca CV-nin necə görünəcəyini anında gör — heç bir təxmin yoxdur.",
+      "pdf_title": "Bir kliklə PDF",
+      "pdf_desc": "Çap üçün hazır, yüksək keyfiyyətli PDF — heç bir formatlaşma problemi yoxdur.",
+      "free_title": "Pulsuz başlanğıc",
+      "free_desc": "Kart məlumatı tələb olunmur. Əvvəl yarat, sonra qərar ver."
+    },
+    "templates": {
+      "kicker": "Şablonlar",
+      "title": "Hər peşəyə yaraşan dizayn",
+      "subtitle": "Klassikdən modern dizayna qədər — hər şablon real HR-lar tərəfindən test edilib.",
+      "view_all": "Bütün şablonlara bax",
+      "items": {
+        "modern": { "name": "Modern", "category": "Texnologiya" },
+        "classic": { "name": "Klassik", "category": "Maliyyə və hüquq" },
+        "creative": { "name": "Kreativ", "category": "Dizayn və media" },
+        "minimal": { "name": "Minimal", "category": "Universal" },
+        "executive": { "name": "Rəhbər", "category": "İdarəetmə" }
+      }
+    },
+    "testimonials": {
+      "kicker": "İstifadəçilərimiz",
+      "title": "CVLAND PRO ilə işə düzələnlər",
+      "subtitle": "Real namizədlərin real təcrübələri.",
+      "items": [
+        {
+          "quote": "İki həftə ərzində üç müsahibə dəvəti aldım. Əvvəl köhnə Word şablonu ilə bir cavab da gəlmirdi.",
+          "name": "Aysu Məmmədova",
+          "role": "Frontend Developer, Bakı"
+        },
+        {
+          "quote": "Süni intellekt köməkçisi xülasə bölməsini elə yazdı ki, mən özüm də heyran qaldım. Vaxta qənaət inanılmazdır.",
+          "name": "Elvin Quliyev",
+          "role": "Marketinq menecer"
+        },
+        {
+          "quote": "ATS dostu CV-yə görə nəhayət böyük şirkətdən cavab gəldi. Şablonlar həqiqətən fərqlidir.",
+          "name": "Nərmin Hüseynli",
+          "role": "Maliyyə analitiki"
+        }
+      ]
+    },
+    "faq": {
+      "kicker": "Tez-tez verilən suallar",
+      "title": "Ağlına gələn hər şeyin cavabı",
+      "items": [
+        {
+          "q": "CVLAND PRO pulsuzdur?",
+          "a": "Bəli — qeydiyyatdan keçərək ilk CV-ni heç bir ödəniş etmədən yarada və PDF kimi endirə bilərsən. Premium şablonlar və əlavə imkanlar üçün münasib qiymətli plan da var."
+        },
+        {
+          "q": "ATS nədir və mənə nə üçün lazımdır?",
+          "a": "ATS (Applicant Tracking System) işəgötürənlərin CV-ləri avtomatik süzgəcdən keçirdiyi sistemdir. Şablonlarımız bu sistemlər üçün optimallaşdırılıb — yəni CV-n HR-a çatana qədər süzgəcdə qalmır."
+        },
+        {
+          "q": "CV-mi neçə dildə hazırlaya bilərəm?",
+          "a": "Hazırda 4 dil dəstəklənir: Azərbaycan, ingilis, rus və türk. Eyni profili istənilən dilə tək kliklə tərcümə edə bilərsən."
+        },
+        {
+          "q": "Məlumatlarım təhlükəsizdir?",
+          "a": "Bəli. Bütün məlumatlar şifrələnmiş şəkildə saxlanılır və üçüncü tərəflərlə paylaşılmır. İstədiyin vaxt hesabını və CV-ni tamamilə silə bilərsən."
+        },
+        {
+          "q": "Hansı ödəniş üsulları qəbul olunur?",
+          "a": "Visa, Mastercard və yerli bank kartları ilə ödəniş edə bilərsən. Bütün ödənişlər təhlükəsiz şəkildə işlənir."
+        },
+        {
+          "q": "Hazır CV-mi sonra düzəldə bilərəmmi?",
+          "a": "Əlbəttə. CV-lərin həmişə profilində qalır — istənilən vaxt aç, düzəlt və yenidən PDF kimi endir."
+        },
+        {
+          "q": "Telefondan da istifadə edə bilərəm?",
+          "a": "Bəli, CVLAND PRO tamamilə mobil-uyğundur. Telefon, planşet və ya kompüter — fərqi yoxdur."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Növbəti müsahibə dəvəti bir CV uzaqlıqdadır.",
+      "subtitle": "Pulsuz qeydiyyatdan keç, ilk peşəkar CV-ni 5 dəqiqəyə hazırla.",
+      "primary": "İndi pulsuz başla",
+      "secondary": "Əvvəlcə şablonları gör"
+    }
+  },
+  "footer": {
+    "tagline": "Peşəkar CV qurmağın ən sadə yolu.",
+    "product": "Məhsul",
+    "company": "Şirkət",
+    "legal": "Hüquqi",
+    "links": {
+      "features": "İmkanlar",
+      "templates": "Şablonlar",
+      "pricing": "Qiymətlər",
+      "faq": "Suallar",
+      "about": "Haqqımızda",
+      "contact": "Əlaqə",
+      "blog": "Bloq",
+      "privacy": "Məxfilik siyasəti",
+      "terms": "İstifadə şərtləri",
+      "cookies": "Kuki siyasəti"
+    },
+    "rights": "Bütün hüquqlar qorunur.",
+    "made_with": "Bakıda sevgi ilə hazırlanıb"
   },
   "auth": {
-    "login_title": "Xoş gəldin",
+    "login_title": "Yenidən xoş gəldin",
     "login_subtitle": "CV-ni qurmağa davam etmək üçün daxil ol.",
-    "register_title": "Hesab aç",
-    "register_subtitle": "Pulsuz başla, kart tələb olunmur.",
-    "name": "Ad soyad",
+    "register_title": "Hesabını aç",
+    "register_subtitle": "Pulsuz başla — kart məlumatı lazım deyil.",
+    "name": "Ad və soyad",
     "email": "E-poçt",
     "password": "Şifrə",
     "password_confirmation": "Şifrəni təsdiqlə",
@@ -33,21 +176,66 @@
     "submit_login": "Daxil ol",
     "submit_register": "Hesab yarat",
     "have_account": "Artıq hesabın var?",
-    "no_account": "Hesabın yoxdur?"
+    "no_account": "Hesabın yoxdur?",
+    "or": "və ya",
+    "perks": {
+      "free": "Pulsuz başlanğıc",
+      "ats": "ATS-uyğun şablonlar",
+      "ai": "Süni intellekt köməkçisi"
+    },
+    "errors": {
+      "invalid_email": "Düzgün e-poçt ünvanı daxil et.",
+      "password_min": "Şifrə ən az 8 simvol olmalıdır.",
+      "password_mismatch": "Şifrələr uyğun gəlmir.",
+      "name_min": "Ad ən az 2 simvol olmalıdır.",
+      "login_failed": "E-poçt və ya şifrə yanlışdır.",
+      "register_failed": "Qeydiyyat zamanı xəta baş verdi."
+    }
   },
   "dashboard": {
-    "title": "İdarə paneli",
+    "title": "Panel",
     "welcome": "Xoş gəldin, {name}",
+    "subtitle": "Bu gün hansı CV üzərində işləyəcəksən?",
     "your_cvs": "CV-lərin",
     "create_new": "Yeni CV yarat",
     "empty_title": "Hələ CV yoxdur",
-    "empty_subtitle": "Şablon seç və ilk peşəkar CV-ni qurmağa başla."
+    "empty_subtitle": "Şablon seç və ilk peşəkar CV-ni qurmağa başla.",
+    "browse_templates": "Şablonlara bax",
+    "stats": {
+      "total": "Cəmi CV",
+      "published": "Dərc edilmiş",
+      "drafts": "Qaralama"
+    }
+  },
+  "cvs": {
+    "title": "CV-lərim",
+    "subtitle": "Bütün CV-lərin bir yerdə.",
+    "create": "Yeni CV",
+    "updated": "Yenilənib",
+    "edit": "Düzəlt",
+    "preview": "Önizləmə",
+    "download": "PDF endir",
+    "duplicate": "Köçür",
+    "delete": "Sil"
+  },
+  "templates": {
+    "title": "Şablonlar",
+    "subtitle": "Peşənə yaraşan dizaynı seç və CV-ni yaratmağa başla.",
+    "use": "Bu şablonu seç",
+    "filter_all": "Hamısı",
+    "filter_free": "Pulsuz",
+    "filter_premium": "Premium"
   },
   "common": {
     "save": "Yadda saxla",
     "cancel": "Ləğv et",
     "edit": "Düzəlt",
     "delete": "Sil",
-    "loading": "Yüklənir…"
+    "loading": "Yüklənir…",
+    "back_home": "Ana səhifəyə qayıt"
+  },
+  "notfound": {
+    "title": "Səhifə tapılmadı",
+    "subtitle": "Axtardığın səhifə mövcud deyil və ya köçürülüb."
   }
 }

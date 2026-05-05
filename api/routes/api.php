@@ -16,8 +16,12 @@ Route::prefix('v1')->group(function (): void {
     |--------------------------------------------------------------------------
     */
     Route::prefix('auth')->group(function (): void {
-        Route::post('/register', [AuthController::class, 'register'])->name('auth.register');
-        Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
+        Route::post('/register', [AuthController::class, 'register'])
+            ->middleware('throttle:register')
+            ->name('auth.register');
+        Route::post('/login', [AuthController::class, 'login'])
+            ->middleware('throttle:login')
+            ->name('auth.login');
     });
 
     /*

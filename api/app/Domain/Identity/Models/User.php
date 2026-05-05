@@ -7,6 +7,8 @@ namespace App\Domain\Identity\Models;
 use App\Domain\CV\Models\Cv;
 use App\Domain\Identity\Models\Builders\UserBuilder;
 use Database\Factories\UserFactory;
+use Filament\Models\Contracts\FilamentUser;
+use Filament\Panel;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
@@ -21,7 +23,7 @@ use Laravel\Sanctum\HasApiTokens;
 #[Fillable(['name', 'email', 'password', 'avatar_path', 'locale'])]
 #[Hidden(['password', 'remember_token'])]
 #[UseFactory(UserFactory::class)]
-class User extends Authenticatable implements MustVerifyEmail
+class User extends Authenticatable implements FilamentUser, MustVerifyEmail
 {
     /** @use HasFactory<UserFactory> */
     use HasApiTokens, HasFactory, Notifiable;
@@ -52,5 +54,11 @@ class User extends Authenticatable implements MustVerifyEmail
     public function newEloquentBuilder($query): UserBuilder
     {
         return new UserBuilder($query);
+    }
+
+    public function canAccessPanel(Panel $panel): bool
+    {
+        // Allow only the admin user (matching seeded credentials) to enter the admin panel.
+        return $this->email === 'admin@admin.com';
     }
 }

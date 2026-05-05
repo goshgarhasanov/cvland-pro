@@ -45,5 +45,14 @@ final class AppServiceProvider extends ServiceProvider
     {
         RateLimiter::for('api', fn (Request $request): Limit => Limit::perMinute(60)
             ->by($request->user()?->id ?: $request->ip()));
+
+        // Stricter throttles on auth endpoints — the LoginUserAction also
+        // tracks email+IP attempts, but a per-IP limit at the edge protects
+        // the password hashing pipeline from raw bursts.
+        RateLimiter::for('login', fn (Request $request): Limit => Limit::perMinute(5)
+            ->by((string) $request->ip()));
+
+        RateLimiter::for('register', fn (Request $request): Limit => Limit::perMinute(3)
+            ->by((string) $request->ip()));
     }
 }

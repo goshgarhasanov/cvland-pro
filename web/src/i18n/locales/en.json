@@ -5,26 +5,169 @@
   },
   "nav": {
     "home": "Home",
+    "features": "Features",
+    "how": "How it works",
+    "templates": "Templates",
+    "pricing": "Pricing",
+    "faq": "FAQ",
     "dashboard": "Dashboard",
     "cvs": "My CVs",
-    "templates": "Templates",
     "login": "Sign in",
     "register": "Get started",
     "logout": "Sign out"
   },
   "home": {
-    "hero_title": "Build a professional CV in minutes.",
-    "hero_subtitle": "ATS-friendly, recruiter-tested templates. Real-time preview. Export to PDF.",
+    "badge": "New · AI-powered assistant",
+    "hero_title_pre": "Build a",
+    "hero_title_accent": "professional CV",
+    "hero_title_post": "in minutes.",
+    "hero_subtitle": "ATS-friendly, recruiter-tested templates. Live preview, four languages, instant PDF export.",
     "cta_primary": "Start for free",
     "cta_secondary": "Browse templates",
-    "stat_seven_seconds": "Recruiters spend 7 seconds reviewing each CV — make every one count.",
-    "stat_callbacks": "40% more callbacks for ATS-optimised CVs."
+    "trust": "Joined by 12,000+ candidates who landed jobs with CVLAND PRO",
+    "stats": {
+      "seconds_label": "Recruiter attention",
+      "seconds_value": "7s",
+      "seconds_desc": "Recruiters spend just 7 seconds reviewing each CV — every second matters.",
+      "callbacks_label": "More callbacks",
+      "callbacks_value": "+40%",
+      "callbacks_desc": "ATS-optimised CVs receive 40% more interview invitations.",
+      "templates_label": "Ready templates",
+      "templates_value": "30+",
+      "templates_desc": "Professional designs for every field — from IT to marketing.",
+      "languages_label": "Languages",
+      "languages_value": "4 languages",
+      "languages_desc": "Build your CV in Azerbaijani, English, Russian and Turkish."
+    },
+    "how": {
+      "kicker": "Simple process",
+      "title": "Your CV in three steps",
+      "subtitle": "You don't need to be a designer. Focus on the content — we handle the rest.",
+      "step1_title": "1. Pick a template",
+      "step1_desc": "Choose from 30+ recruiter-tested templates that match your profession.",
+      "step2_title": "2. Fill in the details",
+      "step2_desc": "Complete a simple form, and let AI suggest stronger phrasing.",
+      "step3_title": "3. Download PDF",
+      "step3_desc": "Export a high-quality PDF in one click and apply the same day."
+    },
+    "features": {
+      "kicker": "Features",
+      "title": "Everything you need, in one place",
+      "subtitle": "We thought through the details — you just tell your story.",
+      "ats_title": "ATS-friendly structure",
+      "ats_desc": "Our templates are parsed cleanly by applicant tracking systems — nothing gets lost.",
+      "ai_title": "AI assistant",
+      "ai_desc": "Improve job descriptions, skill lists and summaries with one click.",
+      "languages_title": "4 languages",
+      "languages_desc": "Azerbaijani, English, Russian, Turkish — one profile, multiple languages.",
+      "preview_title": "Real-time preview",
+      "preview_desc": "See exactly how your CV looks as you type — no guesswork.",
+      "pdf_title": "One-click PDF",
+      "pdf_desc": "Print-ready, high quality PDF — no formatting issues.",
+      "free_title": "Free to start",
+      "free_desc": "No credit card required. Build first, decide later."
+    },
+    "templates": {
+      "kicker": "Templates",
+      "title": "A design for every profession",
+      "subtitle": "From classic to modern — every template tested by real recruiters.",
+      "view_all": "See all templates",
+      "items": {
+        "modern": { "name": "Modern", "category": "Technology" },
+        "classic": { "name": "Classic", "category": "Finance & legal" },
+        "creative": { "name": "Creative", "category": "Design & media" },
+        "minimal": { "name": "Minimal", "category": "Universal" },
+        "executive": { "name": "Executive", "category": "Leadership" }
+      }
+    },
+    "testimonials": {
+      "kicker": "Our users",
+      "title": "Hired with CVLAND PRO",
+      "subtitle": "Real candidates, real outcomes.",
+      "items": [
+        {
+          "quote": "Three interview invites in two weeks. With my old Word template I was getting nothing.",
+          "name": "Aysu Mammadova",
+          "role": "Frontend Developer, Baku"
+        },
+        {
+          "quote": "The AI assistant rewrote my summary so well I was impressed myself. Massive time saver.",
+          "name": "Elvin Guliyev",
+          "role": "Marketing manager"
+        },
+        {
+          "quote": "Thanks to the ATS-friendly CV I finally heard back from a top company. The templates really make a difference.",
+          "name": "Narmin Huseynli",
+          "role": "Financial analyst"
+        }
+      ]
+    },
+    "faq": {
+      "kicker": "FAQ",
+      "title": "Answers to every question",
+      "items": [
+        {
+          "q": "Is CVLAND PRO free?",
+          "a": "Yes — sign up and create your first CV without any payment, then export it as PDF. Premium templates and extra features are available on an affordable plan."
+        },
+        {
+          "q": "What is ATS and why does it matter?",
+          "a": "ATS (Applicant Tracking System) is software that filters CVs automatically. Our templates are optimised for these systems, so your CV reaches the recruiter."
+        },
+        {
+          "q": "How many languages can I use?",
+          "a": "Four are supported today: Azerbaijani, English, Russian and Turkish. Translate your profile with a single click."
+        },
+        {
+          "q": "Is my data safe?",
+          "a": "Yes. All data is encrypted at rest and never shared with third parties. You can fully delete your account at any time."
+        },
+        {
+          "q": "Which payment methods are supported?",
+          "a": "Visa, Mastercard and local bank cards. All payments are processed securely."
+        },
+        {
+          "q": "Can I edit my CV later?",
+          "a": "Of course. Your CVs stay in your profile — open, edit and re-export them any time."
+        },
+        {
+          "q": "Does it work on mobile?",
+          "a": "Yes, CVLAND PRO is fully responsive. Phone, tablet, desktop — it just works."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Your next interview is one CV away.",
+      "subtitle": "Sign up for free and build your first professional CV in 5 minutes.",
+      "primary": "Start free now",
+      "secondary": "See templates first"
+    }
+  },
+  "footer": {
+    "tagline": "The simplest way to build a professional CV.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "links": {
+      "features": "Features",
+      "templates": "Templates",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "about": "About",
+      "contact": "Contact",
+      "blog": "Blog",
+      "privacy": "Privacy policy",
+      "terms": "Terms of service",
+      "cookies": "Cookie policy"
+    },
+    "rights": "All rights reserved.",
+    "made_with": "Made with love in Baku"
   },
   "auth": {
     "login_title": "Welcome back",
     "login_subtitle": "Sign in to continue building your CV.",
     "register_title": "Create your account",
-    "register_subtitle": "Free to start, no credit card needed.",
+    "register_subtitle": "Free to start — no credit card required.",
     "name": "Full name",
     "email": "Email",
     "password": "Password",
@@ -33,21 +176,66 @@
     "submit_login": "Sign in",
     "submit_register": "Create account",
     "have_account": "Already have an account?",
-    "no_account": "Don't have an account?"
+    "no_account": "Don't have an account?",
+    "or": "or",
+    "perks": {
+      "free": "Free to start",
+      "ats": "ATS-friendly templates",
+      "ai": "AI assistant included"
+    },
+    "errors": {
+      "invalid_email": "Please enter a valid email.",
+      "password_min": "Password must be at least 8 characters.",
+      "password_mismatch": "Passwords do not match.",
+      "name_min": "Name must be at least 2 characters.",
+      "login_failed": "Invalid email or password.",
+      "register_failed": "Registration failed."
+    }
   },
   "dashboard": {
     "title": "Dashboard",
     "welcome": "Welcome back, {name}",
+    "subtitle": "Which CV are you working on today?",
     "your_cvs": "Your CVs",
     "create_new": "Create new CV",
     "empty_title": "No CVs yet",
-    "empty_subtitle": "Pick a template and start building your first professional CV."
+    "empty_subtitle": "Pick a template and start building your first professional CV.",
+    "browse_templates": "Browse templates",
+    "stats": {
+      "total": "Total CVs",
+      "published": "Published",
+      "drafts": "Drafts"
+    }
+  },
+  "cvs": {
+    "title": "My CVs",
+    "subtitle": "All your CVs in one place.",
+    "create": "New CV",
+    "updated": "Updated",
+    "edit": "Edit",
+    "preview": "Preview",
+    "download": "Download PDF",
+    "duplicate": "Duplicate",
+    "delete": "Delete"
+  },
+  "templates": {
+    "title": "Templates",
+    "subtitle": "Pick a design that matches your profession and start building.",
+    "use": "Use this template",
+    "filter_all": "All",
+    "filter_free": "Free",
+    "filter_premium": "Premium"
   },
   "common": {
     "save": "Save",
     "cancel": "Cancel",
     "edit": "Edit",
     "delete": "Delete",
-    "loading": "Loading…"
+    "loading": "Loading…",
+    "back_home": "Back to home"
+  },
+  "notfound": {
+    "title": "Page not found",
+    "subtitle": "The page you were looking for has moved or never existed."
   }
 }

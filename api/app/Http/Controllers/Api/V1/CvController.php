@@ -23,6 +23,10 @@ final class CvController extends Controller
 {
     public function index(Request $request): AnonymousResourceCollection
     {
+        $this->authorize('viewAny', Cv::class);
+
+        $perPage = max(1, min(100, $request->integer('per_page', 15)));
+
         $cvs = QueryBuilder::for(Cv::class)
             ->where('user_id', $request->user()->id)
             ->allowedFilters(
@@ -32,13 +36,15 @@ final class CvController extends Controller
             ->allowedSorts('title', 'created_at', 'updated_at')
             ->defaultSort('-updated_at')
             ->with('template')
-            ->paginate($request->integer('per_page', 15));
+            ->paginate($perPage);
 
         return CvResource::collection($cvs);
     }
 
     public function store(StoreCvRequest $request, CreateCvAction $action): JsonResponse
     {
+        $this->authorize('create', Cv::class);
+
         $cv = $action->execute(
             $request->user(),
             CvData::fromArray($request->validated()),
@@ -58,6 +64,8 @@ final class CvController extends Controller
 
     public function update(UpdateCvRequest $request, Cv $cv, UpdateCvAction $action): CvResource
     {
+        $this->authorize('update', $cv);
+
         $cv = $action->execute($cv, CvData::fromArray($request->validated()));
 
         return CvResource::make($cv->load('template'));

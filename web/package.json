@@ -20,6 +20,7 @@
     "@tanstack/vue-query": "^5.59.0",
     "@vee-validate/zod": "^4.14.7",
     "axios": "^1.7.7",
+    "lucide-vue-next": "^1.0.0",
     "pinia": "^2.2.6",
     "vee-validate": "^4.14.7",
     "vue": "^3.5.13",

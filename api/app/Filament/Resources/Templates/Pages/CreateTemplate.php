@@ -1,0 +1,23 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Filament\Resources\Templates\Pages;
+
+use App\Filament\Resources\Templates\TemplateResource;
+use Filament\Resources\Pages\CreateRecord;
+
+class CreateTemplate extends CreateRecord
+{
+    protected static string $resource = TemplateResource::class;
+
+    public function getTitle(): string
+    {
+        return 'Yeni şablon yarat';
+    }
+
+    protected function getCreatedNotificationTitle(): ?string
+    {
+        return 'Şablon yaradıldı';
+    }
+}
