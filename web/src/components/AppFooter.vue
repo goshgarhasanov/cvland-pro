@@ -87,6 +87,15 @@ const legalLinks = [
 
       <div class="mt-12 flex flex-col items-center justify-between gap-3 border-t border-slate-800/80 pt-8 sm:flex-row">
         <p class="text-xs text-slate-500">© {{ year }} {{ t('app.name') }}. {{ t('footer.rights') }}</p>
+        <p class="text-xs text-slate-500">
+          Developed by
+          <a
+            href="https://github.com/goshgarhasanov"
+            target="_blank"
+            rel="noopener"
+            class="bg-gradient-to-r from-indigo-400 via-fuchsia-400 to-amber-400 bg-clip-text font-semibold text-transparent"
+          >Goshgar Hasanzadeh</a>
+        </p>
         <p class="flex items-center gap-1.5 text-xs text-slate-500">
           {{ t('footer.made_with') }}
           <Heart class="h-3 w-3 fill-rose-500 text-rose-500" />
