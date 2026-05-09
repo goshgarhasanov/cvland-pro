@@ -12,6 +12,7 @@
 [![Filament](https://img.shields.io/badge/Filament-4-FFBA37?logo=php&logoColor=white)](https://filamentphp.com)
 [![Tests](https://img.shields.io/badge/Tests-29%2F29%20passing-success)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Bir qəhvə al](https://img.shields.io/badge/%E2%98%95-Bir%20q%C9%99hv%C9%99%20al-ff7d5a)](https://kofe.al/@goshgarhasanov)
 
 </div>
 
